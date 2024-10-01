@@ -1,0 +1,11 @@
+
+PRE FLASHING :
+   - File "pulpstone_android_b860h.pw"
+   - Install WorldCup Device Driver [bila belum install]
+   - Tahan tombol power lalu colokan kabel USB2USB Male
+     pada Port2 USB di STB
+     *Tanpa Adaptor STB B860H dari PT.Panggung
+     *Dengan Adaptor STB B860H dari PT.Industri
+
+POST FLASHING
+   - Baca keterangan di READ_ME firmware
