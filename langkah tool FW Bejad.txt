@@ -1,0 +1,64 @@
+POSTINGAN ASLI OM ARIEFANTO 
+https://www.facebook.com/groups/1699238840167298/permalink/2610900109001162/
+
+PERHATIAN INI KHUSUS UNTUK STB B860H SELAIN BUATAN PT.HEX----- KARENA PT HEX TITIK JUMPERNYA BEDA BUKAN R87
+WAJIB PUNYA 
+USB TO TTL ( BELI MURAH / BUAT )
+USB TO USB ( BELI / BUAT AJA )
+MICRO SD YANG MASIH OK 
+OBENG + - UNTUK JUMPERNYA
+PC/LAPTOP ( TESTED PAKAI WIN 7 32BIT)
+DONWLOAD SEMUA SOFTWARE YANG ADA DI DESKRIPSI
+SELAMAT MEMBACA 
+
+Update !!! ( EDITED YA OM ) 
+postingan bagi yang terlanjur terkena update fw bejat V1 & V2.1
+Firmware 20191012 up :
+
+
+Resolution :
+
+Unlock USB di FW Bejat
+
+1. Pastikan STB tidak tersambung power adaptor.( UNTUK DARI BEBERAPA PT MINTA SAMBUNG ADAPTOR UNTUK PROSES INI ) 
+2. Siapkan dan buat sdcard [BootCardMaker] file u-boot.bin B860H _> COPY 3 FILE PADA FOLDER UNLOCK USB KE SD CARD,
+3. Setelah sukses membuat BootcardMaker di sdcard copy 3 file yaitu u-boot.bin, boot.img dan bootloader.img. tancapkan di slot sdcard
+4. PASANG KABEL USB TO TTL PADA PIN GND TX DAN RX 
+5. LALU BUKA APLIKASI PUTTY KONEK PADA TYPE SERIAL SESUAI PORT ttL.NYA MISAL COM1 SPEED 115200
+6. LALU PILIH OPEN, SEHINGGA JENDELA PUTTY SIAP
+7. PASANG ADAPTOR,BEGITU COLOK ADAPTOR Short [sambungkan 2 pin solderan] di pin R87
+  ----(posisi pin ada diantara lampu indikator dan headsink procy),
+8. Lepas jumper short pin saat notif di PuTTY muncul "gxl_p212_v1#"
+
+   KALAU GA MUNCUL2 JUMPERNYA KURANG SEMPURNA ..... KALAU UDAH MUNCUL TERUS PUTTY GA BISA DI KETIK UPDATE REBOOT , pindah usb ttl ke lobang usb lain di pc
+9. PASANG USB2 USB PADA USB2 KE LAPTOP.
+10. Ketikan di gxl_p212_v1#update reboot
+11. Perhatikan UBT; akan keluar notif status "Connect succes"... Dan notif di PuTTY :
+InUsbBurn
+[MSG]sof
+Set Addr 1
+Get DT cfg
+Get DT cfg
+Get DT cfg
+set CFG
+
+12. STB siap didowngrade ke versi unlock USB - MASUK LANGKAH FLASH(DISINI SAYA PAKAI PULSPSTONE) 
+13. SOLVED
+
+
+PASANG BOOTLOADER KE STB SETELAH BERHASIL DI ROOT PADA TERMINAL EMULATOR
+   dd if=/sdcard/Download/bootloader.img of=/dev/block/bootloader
+?? Case Closed ticket number OFW 20191012
+?? Link alat tempur :
+
+?? Special Thanks to cc : Jo Simson
+?? Admin B860H [ID]
+?? Thanks too member B860H [ID]
+
+#hargastbstabil
+#saveusbttl
+#savesdcardbootMaker
+#savepinshort
+
+Terimakasih
+Salam
