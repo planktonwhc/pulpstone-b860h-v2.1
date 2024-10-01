@@ -9,3 +9,8 @@ PRE FLASHING :
 
 POST FLASHING
    - Baca keterangan di READ_ME firmware
+
+
+FILE FIRMWARE 
+"pulpstone_android_b860h.pw"
+Hanya dapat di akses dengan mengirim pesan ke Telegram
